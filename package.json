@@ -1,0 +1,47 @@
+{
+  "name": "@acfatah/rollup-template",
+  "version": "0.1.0",
+  "description": "A template to publish ES6 modules to npm",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "browser": "dist/umd/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acfatah/rollup-template.git"
+  },
+  "keywords": [
+    "package",
+    "npm",
+    "es6",
+    "babel",
+    "example",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Achmad F. Ibrahim <acfatah@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acfatah/rollup-template/issues"
+  },
+  "homepage": "https://github.com/acfatah/rollup-template#readme",
+  "dependencies": {
+    "ms": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
